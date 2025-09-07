@@ -39,3 +39,4 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.pas
 Log in to the Argo CD UI:
 Open your browser and navigate to the argocd_server_ip. The username is admin, and the password is the one you retrieved in the previous step.
 You now have a running GKE cluster with Argo CD installed and ready to manage your Kubernetes applications following the GitOps methodology. The example Nginx deployment demonstrates how to expose services publicly using a LoadBalancer.
+
