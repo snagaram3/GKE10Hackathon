@@ -1,5 +1,5 @@
 .terraform/
-tf-gke-argocd/.terraform/
+iac/tf-gke-argocd/.terraform/
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
