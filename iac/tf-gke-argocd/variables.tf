@@ -19,5 +19,5 @@ variable "zone" {
 variable "cluster_name" {
   description = "Name for the GKE cluster"
   type        = string
-  default     = "demo-gke-1"
+  default     = "kubestronautinmaking-gke-1"
 }

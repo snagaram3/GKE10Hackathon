@@ -34,12 +34,3 @@ output "argocd_initial_admin_password" {
   sensitive   = true
   description = "Initial 'admin' password for Argo CD (rotate after first login)"
 }
-
-# Example app public IP
-output "example_app_ip" {
-  value = try(
-    kubernetes_service.nginx_lb.status[0].load_balancer[0].ingress[0].ip,
-    null
-  )
-  description = "Public IP for the sample nginx Service: LoadBalancer"
-}
