@@ -1,0 +1,16 @@
+{
+    "servers": {
+      "argocd-mcp-stdio": {
+        "type": "stdio",
+        "command": "npx",
+        "args": [
+          "argocd-mcp@latest",
+          "stdio"
+        ],
+        "env": {
+          "ARGOCD_BASE_URL": "http://34.27.108.228/",
+          "ARGOCD_API_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhcmdvY2QiLCJzdWIiOiJjaWNkOmFwaUtleSIsIm5iZiI6MTc1NzQ3NzgzMiwiaWF0IjoxNzU3NDc3ODMyLCJqdGkiOiIwMmIxYzhmYi05NTdlLTQwNDEtODhmZS1iOTc5MWY2NmRjNTQifQ.v2P77N_1cMIZUDln5izRQwI5fDzFyRHwVltLvw4190Y"
+        }
+      }
+    }
+  }

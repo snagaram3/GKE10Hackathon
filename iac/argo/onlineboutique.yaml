@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: online-boutique
+  namespace: app1
+spec:
+  destination:
+    name: ''
+    namespace: app1
+    server: https://kubernetes.default.svc
+  source:
+    path: ''
+    repoURL: oci://us-docker.pkg.dev/online-boutique-ci/charts
+    targetRevision: 0.5.0
+    chart: onlineboutique
+  sources: []
+  project: default
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
