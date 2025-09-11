@@ -1,0 +1,6 @@
+.terraform/
+iac/tf-gke-argocd/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+crash.log
